@@ -234,7 +234,7 @@ maxHeightPixels 128:128:16
 
 ###
 
-track Flavo_CMV_IE2_FKBP_dFK
+track Flavo_CMV_IE2_FKBP
 compositeTrack on hide
 type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
@@ -243,8 +243,8 @@ visibility full
 shortLabel PRO-Seq Flavo 4h TB40/E
 longLabel PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
-track Flavo_CMV_IE2_FKBP_dFK_FW
-parent Flavo_CMV_IE2_FKBP_dFK on
+track Flavo_CMV_IE2_FKBP_FW
+parent Flavo_CMV_IE2_FKBP on
 type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-Ctrl-FJ616285.1-Norm-FW.bw
@@ -257,8 +257,8 @@ alwaysZero on
 autoScale on
 maxHeightPixels 128:128:16
 
-track Flavo_CMV_IE2_FKBP_dFK_RV
-parent Flavo_CMV_IE2_FKBP_dFK on
+track Flavo_CMV_IE2_FKBP_RV
+parent Flavo_CMV_IE2_FKBP on
 type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-Ctrl-FJ616285.1-Norm-RV.bw
