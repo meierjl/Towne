@@ -1,0 +1,1201 @@
+###########################################################
+# ROPE analyses, PRO-Seq and PRO-Cap Datasets, TATW tracks
+###########################################################
+# 1: ROPE TSR analyses
+#	1.1: Towne Control FW TSR
+#	1.2: Towne Flavo FW TSR
+#	1.3: Towne Control RV TSR
+#	1.4: Towne Flavo RV TSR
+#	1.5: Towne FW
+#	1.6: Towne BAC FW
+#	1.7: Towne RV
+#	1.8: Towne BAC RV
+# 2: 4 h TB40/E DMSO PRO-Seq
+# 3: 4 h TB40/E Flavo PRO-Seq
+# 4: 96 h Towne DMSO PRO-Seq
+# 	4.1: Towne Control
+#	4.2: Towne BAC Control
+# 5: 96 h Towne Flavo PRO-Seq
+# 	5.1: Towne Flavo
+#	5.2: Towne BAC Flavo
+# 6: 96 h Towne DMSO PRO-Cap
+# 7: 96 h Towne Flavo PRO-Cap
+# 8: DMSO TSS w/ TATW upstream [-36,-30]
+# 9: Flavo TSS w/ TATW upstream [-36,-30]
+# 10: 5' 96 h Towne DMSO PRO-Cap
+# 11: 5' 96 h Towne Flavo PRO-Cap
+##################################################
+###
+
+track TSR-ROPE 
+superTrack on show
+group proseq-procap
+priority 1
+shortLabel TSR ROPE
+longLabel Transcription Start Region and Regions of Productive Elongation 
+
+track Towne-Control-FW-TSR
+parent TSR-ROPE
+type bigBed 6 .
+visibility dense
+itemRgb on
+priority 1.1
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/Towne-Control-FW-TSR.bb
+longLabel FW strand transciption start regions in Towne Control
+shortLabel Towne Control Fw TSRs
+
+track Towne-Flavo-FW-TSR
+parent TSR-ROPE
+type bigBed 6 .
+visibility dense
+itemRgb on
+priority 1.2
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/Towne-Flavo-FW-TSR.bb
+longLabel FW strand transciption start regions in Towne Flavo
+shortLabel Towne Flavo Fw TSRs
+
+track Towne-Control-RV-TSR
+parent TSR-ROPE
+type bigBed 6 .
+visibility dense
+itemRgb on
+priority 1.3
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/Towne-Control-RV-TSR.bb
+longLabel RV strand transciption start regions in Towne Control
+shortLabel Towne Control Rv TSRs
+
+track Towne-Flavo-RV-TSR
+parent TSR-ROPE
+type bigBed 6 .
+visibility dense
+itemRgb on
+priority 1.4
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/Towne-Flavo-RV-TSR.bb
+longLabel RV strand transciption start regions in Towne Flavo
+shortLabel Towne Flavo Rv TSRs
+
+track Towne-FW
+parent TSR-ROPE
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 1.5
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/ROPE-Towne-FW.bb
+longLabel FW strand regions of productive elongation in Towne
+shortLabel Towne Fw ROPE
+
+track Towne-BAC-FW
+parent TSR-ROPE
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 1.6
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/ROPE-Towne-BAC-FW.bb
+longLabel FW strand regions of productive elongation in Towne BAC
+shortLabel Towne BAC Fw ROPE
+
+track Towne-RV
+parent TSR-ROPE
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 1.7
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/ROPE-Towne-RV.bb
+longLabel RV strand regions of productive elongation in Towne
+shortLabel Towne Rv ROPE
+
+track Towne-BAC-RV
+parent TSR-ROPE
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 1.8
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/ROPE-Towne-BAC-RV.bb
+longLabel RV strand regions of productive elongation in Towne BAC
+shortLabel Towne BAC Rv ROPE
+
+###
+
+track PRO-Seq-DMSO-4h-TB40E
+compositeTrack on hide
+type bigWig 0 1000
+group proseq-procap
+priority 2
+visibility full
+shortLabel PRO-Seq DMSO 4h TB40/E
+longLabel PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain TB40/E
+
+track PRO-Seq-DMSO-4h-TB40E-FW
+parent PRO-Seq-DMSO-4h-TB40E on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-DMSO-4h-TB40E-FW.bw
+longLabel FW strand PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain TB40/E
+shortLabel FW PRO-Seq DMSO 4h TB40/E
+negateValues off
+color 255,0,0
+altColor 255,0,0
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Seq-DMSO-4h-TB40E-RV
+parent PRO-Seq-DMSO-4h-TB40E on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-DMSO-4h-TB40E-RV.bw
+longLabel RV strand PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain TB40/E
+shortLabel RV PRO-Seq DMSO 4h TB40/E
+negateValues on
+color 255,0,0
+altColor 255,0,0
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Seq-Flavo-4h-TB40E
+compositeTrack on hide
+type bigWig 0 1000
+group proseq-procap
+priority 3
+visibility full
+shortLabel PRO-Seq Flavo 4h TB40/E
+longLabel PRO-Seq in flavopiridol-treated HFF infected 4 hours with HCMV strain TB40/E
+
+track PRO-Seq-Flavo-4h-TB40E-FW
+parent PRO-Seq-Flavo-4h-TB40E on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-Flavo-4h-TB40E-FW.bw
+longLabel FW strand PRO-Seq in flavopiridol-treated HFF infected 4 hours with HCMV strain TB40/E
+shortLabel FW PRO-Seq Flavo 4h TB40/E
+negateValues off
+color 255,0,0
+altColor 255,0,0
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Seq-Flavo-4h-TB40E-RV
+parent PRO-Seq-Flavo-4h-TB40E on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-Flavo-4h-TB40E-RV.bw
+longLabel RV strand PRO-Seq in flavopiridol-treated HFF infected 4 hours with HCMV strain TB40/E
+shortLabel RV PRO-Seq Flavo 4h TB40/E
+negateValues on
+color 255,0,0
+altColor 255,0,0
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Seq-DMSO-96h-Towne
+compositeTrack on 
+type bigWig 0 1000
+group proseq-procap
+priority 4.1
+visibility full
+shortLabel PRO-Seq DMSO 96h Towne
+longLabel PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne
+
+track PRO-Seq-DMSO-96h-Towne-FW
+parent PRO-Seq-DMSO-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-DMSO-96h-Towne-FW.bw
+longLabel FW strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne
+shortLabel FW PRO-Seq DMSO 96h Towne
+negateValues off
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Seq-DMSO-96h-Towne-RV
+parent PRO-Seq-DMSO-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-DMSO-96h-Towne-RV.bw
+longLabel RV strand PRO-Seq in DMSO-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV PRO-Seq DMSO 96h Towne
+negateValues on
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Seq-DMSO-96h-Towne-BAC
+compositeTrack on
+type bigWig 0 1000
+group proseq-procap
+priority 4.2
+visibility full
+shortLabel PRO-Seq DMSO 96h Towne BAC
+longLabel PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne BAC
+
+track PRO-Seq-DMSO-96h-Towne-BAC-FW
+parent PRO-Seq-DMSO-96h-Towne-BAC on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/2018-02-28-DMSO-cmvWT-Ctrl-alignToCMV-dedup-FW.bw2
+longLabel FW strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne BAC
+shortLabel FW PRO-Seq DMSO 96h Towne BAC
+negateValues off
+color 113,35,124
+altColor 113,35,124
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Seq-DMSO-96h-Towne-BAC-RV
+parent PRO-Seq-DMSO-96h-Towne-BAC on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/2018-02-28-DMSO-cmvWT-Ctrl-alignToCMV-dedup-RV.bw2
+longLabel RV strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne BAC
+shortLabel RV PRO-Seq DMSO 96h Towne BAC
+negateValues on
+color 113,35,124
+altColor 113,35,124
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Seq-Flavo-96h-Towne
+compositeTrack on 
+type bigWig 0 1000
+group proseq-procap
+priority 5.1
+visibility full
+shortLabel PRO-Seq Flavo 96h Towne
+longLabel PRO-Seq in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne
+
+track PRO-Seq-Flavo-96h-Towne-FW
+parent PRO-Seq-Flavo-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-Flavo-96h-Towne-FW.bw
+longLabel FW strand PRO-Seq in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne
+shortLabel FW PRO-Seq Flavo 96h Towne
+negateValues off
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Seq-Flavo-96h-Towne-RV
+parent PRO-Seq-Flavo-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Seq-Flavo-96h-Towne-RV.bw
+longLabel RV strand PRO-Seq in flavopiridol-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV PRO-Seq Flavo 96h Towne
+negateValues on
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Seq-Flavo-96h-Towne-BAC
+compositeTrack on
+type bigWig 0 1000
+group proseq-procap
+priority 5.2
+visibility full
+shortLabel PRO-Seq Flavo 96h Towne BAC
+longLabel PRO-Seq in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne BAC
+
+track PRO-Seq-Flavo-96h-Towne-BAC-FW
+parent PRO-Seq-Flavo-96h-Towne-BAC on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/2018-02-28-Flavo-cmvWT-Ctrl-alignToCMV-dedup-FW.bw2
+longLabel FW strand PRO-Seq in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne BAC
+shortLabel FW PRO-Seq Flavo 96h Towne BAC
+negateValues off
+color 153,58,29
+altColor 153,58,29
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Seq-Flavo-96h-Towne-BAC-RV
+parent PRO-Seq-Flavo-96h-Towne-BAC on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/2018-02-28-Flavo-cmvWT-Ctrl-alignToCMV-dedup-RV.bw2
+longLabel RV strand PRO-Seq in flavopiridol-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV PRO-Seq Flavo 96h Towne BAC
+negateValues on
+color 153,58,29
+altColor 153,58,29
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Cap-DMSO-96h-Towne
+compositeTrack on hide
+type bigWig 0 1000
+group proseq-procap
+priority 6
+visibility full
+shortLabel PRO-Cap DMSO 96h Towne
+longLabel PRO-Cap in DMSO-treated HFF infected 96 hours with HCMV strain Towne
+
+track PRO-Cap-DMSO-96h-Towne-FW
+parent PRO-Cap-DMSO-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Cap-DMSO-96h-Towne-FW.bw
+longLabel FW strand PRO-Cap in DMSO-treated HFF infected 96 hours with HCMV strain Towne
+shortLabel FW PRO-Cap DMSO 96h Towne
+negateValues off
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Cap-DMSO-96h-Towne-RV
+parent PRO-Cap-DMSO-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Cap-DMSO-96h-Towne-RV.bw
+longLabel RV strand PRO-Cap in DMSO-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV PRO-Cap DMSO 96h Towne
+negateValues on
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track PRO-Cap-Flavo-96h-Towne
+compositeTrack on hide
+type bigWig 0 1000
+group proseq-procap
+priority 7
+visibility full
+shortLabel PRO-Cap Flavo 96h Towne
+longLabel PRO-Cap in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne
+
+track PRO-Cap-Flavo-96h-Towne-FW
+parent PRO-Cap-Flavo-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Cap-Flavo-96h-Towne-FW.bw
+longLabel FW strand PRO-Cap in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne
+shortLabel FW PRO-Cap Flavo 96h Towne
+negateValues off
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track PRO-Cap-Flavo-96h-Towne-RV
+parent PRO-Cap-Flavo-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/PRO-Cap-Flavo-96h-Towne-RV.bw
+longLabel RV strand PRO-Cap in flavopiridol-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV PRO-Cap Flavo 96h Towne
+negateValues on
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track TATW-DMSO-96h-Towne
+superTrack on show
+group proseq-procap
+priority 8
+shortLabel DMSO Upstream TATW
+longLabel DMSO TSS with TATA (black) or TATT (red) starting at -36 to -30 upstream
+
+track TATA-DMSO-96h-Towne-FW
+parent TATW-DMSO-96h-Towne
+type bigBed 8 .
+visibility dense
+itemRgb on
+priority 8.1
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATA_Towne_DMSO_FW.bb
+longLabel FW strand DMSO TSS with TATA (black) starting at -36 to -30 upstream
+shortLabel Towne Control Fw TATA
+
+track TATA-DMSO-96h-Towne-RV
+parent TATW-DMSO-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 8.2
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATA_Towne_DMSO_RV.bb
+longLabel RV strand DMSO TSS with TATA (black) starting at -36 to -30 upstream
+shortLabel Towne Control Rv TATA
+
+track TATT-DMSO-96h-Towne-FW
+parent TATW-DMSO-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 8.3
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATT_Towne_DMSO_FW.bb
+longLabel FW strand DMSO TSS with TATT (red) starting at -36 to -30 upstream
+shortLabel Towne Control Fw TATT
+
+track TATT-DMSO-96h-Towne-RV
+parent TATW-DMSO-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 8.4
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATT_Towne_DMSO_RV.bb
+longLabel RV strand DMSO TSS with TATT (red) starting at -36 to -30 upstream
+shortLabel Towne Control Rv TATT
+
+###
+
+track TATW-Flavo-96h-Towne
+superTrack on show
+group proseq-procap
+priority 9
+shortLabel Flavo Upstream TATW
+longLabel Flavopiridol TSS with TATA (black) or TATT (red) starting at -36 to -30 upstream
+
+track TATA-Flavo-96h-Towne-FW
+parent TATW-Flavo-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 9.1
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATA_Towne_Flavo_FW.bb
+longLabel FW strand flavopiridol TSS with TATA (black) starting at -36 to -30 upstream
+shortLabel Towne Flavo Fw TATA
+
+track TATA-Flavo-96h-Towne-RV
+parent TATW-Flavo-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 9.2
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATA_Towne_Flavo_RV.bb
+longLabel RV strand flavopiridol TSS with TATA (black) starting at -36 to -30 upstream
+shortLabel Towne Flavo Rv TATA
+
+track TATT-Flavo-96h-Towne-FW
+parent TATW-Flavo-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 9.3
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATT_Towne_Flavo_FW.bb
+longLabel FW strand flavopiridol TSS with TATT (red) starting at -36 to -30 upstream
+shortLabel Towne Flavo Fw TATT
+
+track TATT-Flavo-96h-Towne-RV
+parent TATW-Flavo-96h-Towne
+type bigBed 9 .
+visibility dense
+itemRgb on
+priority 9.4
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/analyses/TATT_Towne_Flavo_RV.bb
+longLabel RV strand flavopiridol TSS with TATT (red) starting at -36 to -30 upstream
+shortLabel Towne Flavo Rv TATT
+
+###
+
+track 5-PRO-Cap-DMSO-96h-Towne
+compositeTrack on 
+type bigWig 0 1000
+group proseq-procap
+priority 10
+visibility full
+shortLabel 5' PRO-Cap DMSO 96h Towne
+longLabel 5' PRO-Cap in DMSO-treated HFF infected 96 hours with HCMV strain Towne
+
+track 5-PRO-Cap-DMSO-96h-Towne-FW
+parent 5-PRO-Cap-DMSO-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/5-PRO-Cap-DMSO-96h-Towne-FW.bw
+longLabel FW strand 5' PRO-Cap in DMSO-treated HFF infected 96 hours with HCMV strain Towne
+shortLabel FW 5' PRO-Cap DMSO 96h Towne
+negateValues off
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track 5-PRO-Cap-DMSO-96h-Towne-RV
+parent 5-PRO-Cap-DMSO-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/5-PRO-Cap-DMSO-96h-Towne-RV.bw
+longLabel RV strand 5' PRO-Cap in DMSO-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV 5' PRO-Cap DMSO 96h Towne
+negateValues on
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track 5-PRO-Cap-Flavo-96h-Towne
+compositeTrack on 
+type bigWig 0 1000
+group proseq-procap
+priority 11
+visibility full
+shortLabel 5' PRO-Cap Flavo 96h Towne
+longLabel 5' PRO-Cap in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne
+
+track 5-PRO-Cap-Flavo-96h-Towne-FW
+parent 5-PRO-Cap-Flavo-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/5-PRO-Cap-Flavo-96h-Towne-FW.bw
+longLabel FW strand 5' PRO-Cap in flavopiridol-treated HFF infected 96 hours with HCMV strain Towne
+shortLabel FW 5' PRO-Cap Flavo 96h Towne
+negateValues off
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track 5-PRO-Cap-Flavo-96h-Towne-RV
+parent 5-PRO-Cap-Flavo-96h-Towne on
+type bigWig 0 1000
+visibility full
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/proseq-procap/5-PRO-Cap-Flavo-96h-Towne-RV.bw
+longLabel RV strand 5' PRO-Cap in flavopiridol-treated HFF infected 96 days with HCMV strain Towne
+shortLabel RV 5' PRO-Cap Flavo 96h Towne
+negateValues on
+color 34,34,255
+altColor 34,34,255
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+##################################################
+# Mapping and Annotation
+##################################################
+# 1: Annotated CDS from FJ616285.1
+# 2: Additional details for MIE promoters IE1/IE2
+# 3: Additional regions of interest around oriLyt
+##################################################
+
+track FJ616285.1-genbank
+type bigGenePred
+group map
+priority 1
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/FJ616285.1.bb
+longLabel Annotated CDS for HCMV strain Towne (FJ616285.1)
+shortLabel GenBank FJ616285.1
+visibility pack
+
+###
+
+track MIE
+type bigBed 12 .
+group map
+priority 2
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/MIE.bb
+longLabel Potential MIE promoters
+shortLabel MIE Promoters
+visibility pack
+itemRgb on
+
+###
+
+track oriLyt
+type bigBed 12 .
+group map
+priority 3
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/oriLyt.bb
+longLabel Regions of interest near oriLyt
+shortLabel oriLyt Regions
+visibility pack
+itemRgb on
+
+##################################################
+# GSE41605: HCMV Ribosome Profiling and ORFs
+##################################################
+# 1: ORFs identified GSE41605
+# 2: 5 h Merlin
+#	2.1: mRNA-Seq
+#	2.2: Ribosome footprinting w/ no drug
+#	2.3: Ribosome footprinting w/ CHX
+#	2.4: Ribosome footprinting w/ Harr
+# 3: 24 h Merlin
+#	3.1: mRNA-Seq
+#	3.2: Ribosome footprinting w/ CHX
+# 4: 72 h Merlin
+#	4.1: mRNA-Seq
+#	4.2: Ribosome footprinting w/ no drug
+#	4.3: Ribosome footprinting w/ CHX
+#	4.4: Ribosome footprinting w/ Harr
+##################################################
+
+track ORFs-GSE41605
+type bigBed 6 .
+group GSE41605
+priority 1
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/ORFs-GSE41605.bb
+longLabel ORFs identified in Decoding HCMV Using Ribosome Profiling (GSE41605)
+shortLabel Identified ORFs
+visibility hide
+noScoreFilter on
+html GSE41605
+
+###
+
+track pA-5h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 2.1
+visibility hide
+shortLabel mRNA-Seq 5h Merlin
+longLabel mRNA-Seq in HFF infected 5 hours with HCMV strain Merlin GSM1020248
+html GSE41605
+
+track pA-5h-Merlin-FW
+type bigWig 0 1000
+parent pA-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/pA-5h-Merlin-FW.bw
+longLabel FW strand mRNA-Seq in HFF infected 5 hours with HCMV strain Merlin GSM1020247
+shortLabel FW mRNA-Seq 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track pA-5h-Merlin-RV
+type bigWig 0 1000
+parent pA-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/pA-5h-Merlin-RV.bw
+longLabel RV strand mRNA-Seq in HFF infected 5 hours with HCMV strain Merlin GSM1020247
+shortLabel RV mRNA-Seq 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-NoDrug-5h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 2.2
+visibility hide
+shortLabel Ribosome FP Ctrl 5h Merlin
+longLabel Ribosome-protected mRNA in untreated HFF infected 5 hours with HCMV strain Merlin GSM1020234
+html GSE41605
+
+track RF-NoDrug-5h-Merlin-FW
+type bigWig 0 1000
+parent RF-NoDrug-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-NoDrug-5h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in untreated HFF infected 5 hours with HCMV strain Merlin GSM1020234
+shortLabel FW Ribosome FP Ctrl 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-NoDrug-5h-Merlin-RV
+type bigWig 0 1000
+parent RF-NoDrug-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-NoDrug-5h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in untreated HFF infected 5 hours with HCMV strain Merlin GSM1020234
+shortLabel RV Ribosome FP Ctrl 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-Cycloheximide-5h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 2.3
+visibility hide
+shortLabel Ribosome FP CHX 5h Merlin
+longLabel Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 5 hours with HCMV strain Merlin GSM1020234
+html GSE41605
+
+track RF-Cycloheximide-5h-Merlin-FW
+type bigWig 0 1000
+parent RF-Cycloheximide-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Cycloheximide-5h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 5 hours with HCMV strain Merlin GSM1020234
+shortLabel FW Ribosome FP CHX 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-Cycloheximide-5h-Merlin-RV
+type bigWig 0 1000
+parent RF-Cycloheximide-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Cycloheximide-5h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 5 hours with HCMV strain Merlin GSM1020234
+shortLabel RV Ribosome FP CHX 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-Harringtonine-5h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 2.4
+visibility hide
+shortLabel Ribosome FP Harr 5h Merlin
+longLabel Ribosome-protected mRNA in Harringtonine-pretreated HFF infected 5 hours with HCMV strain Merlin GSM1020238
+html GSE41605
+
+track RF-Harringtonine-5h-Merlin-FW
+type bigWig 0 1000
+parent RF-Harringtonine-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Harringtonine-5h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in Harringtonine-pretreated HFF infected 5 hours with HCMV strain Merlin GSM1020238
+shortLabel FW Ribosome FP Harr 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-Harringtonine-5h-Merlin-RV
+type bigWig 0 1000
+parent RF-Harringtonine-5h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Harringtonine-5h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in Harringtonine-treated HFF infected 5 hours with HCMV strain Merlin GSM1020238
+shortLabel RV Ribosome FP Harr 5h Merlin
+visibility full
+color 31,87,164
+altColor 45,116,218
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track pA-24h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 3.1
+visibility hide
+shortLabel mRNA-Seq 24h Merlin
+longLabel mRNA-Seq in HFF infected 24 hours with HCMV strain Merlin GSM1020248
+html GSE41605
+
+track pA-24h-Merlin-FW
+type bigWig 0 1000
+parent pA-24h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/pA-24h-Merlin-FW.bw
+longLabel FW strand mRNA-Seq in HFF infected 24 hours with HCMV strain Merlin GSM1020248
+shortLabel FW mRNA-Seq 24h Merlin
+visibility full
+color 17,102,57
+altColor 0,136,75
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track pA-24h-Merlin-RV
+type bigWig 0 1000
+parent pA-24h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/pA-24h-Merlin-RV.bw
+longLabel RV strand mRNA-Seq in HFF infected 24 hours with HCMV strain Merlin GSM1020248
+shortLabel RV mRNA-Seq 24h Merlin
+visibility full
+color 17,102,57
+altColor 0,136,75
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-Cycloheximide-24h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 3.2
+visibility hide
+shortLabel Ribosome FP CHX 24h Merlin
+longLabel Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 24 hours with HCMV strain Merlin GSM1020235
+html GSE41605
+
+track RF-Cycloheximide-24h-Merlin-FW
+type bigWig 0 1000
+parent RF-Cycloheximide-24h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Cycloheximide-24h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 24 hours with HCMV strain Merlin GSM1020235
+shortLabel FW Ribosome FP CHX 24h Merlin
+visibility full
+color 17,102,57
+altColor 0,136,75
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-Cycloheximide-24h-Merlin-RV
+type bigWig 0 1000
+parent RF-Cycloheximide-24h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Cycloheximide-24h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 24 hours with HCMV strain Merlin GSM1020235
+shortLabel RV Ribosome FP CHX 24h Merlin
+visibility full
+color 17,102,57
+altColor 0,136,75
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track pA-72h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 4.1
+visibility hide
+shortLabel mRNA-Seq 72h Merlin
+longLabel mRNA-Seq in HFF infected 72 hours with HCMV strain Merlin GSM1020249
+html GSE41605
+
+track pA-72h-Merlin-FW
+type bigWig 0 1000
+parent pA-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/pA-72h-Merlin-FW.bw
+longLabel FW strand mRNA-Seq in HFF infected 72 hours with HCMV strain Merlin GSM1020249
+shortLabel FW mRNA-Seq 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track pA-72h-Merlin-RV
+type bigWig 0 1000
+parent pA-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/pA-72h-Merlin-RV.bw
+longLabel RV strand mRNA-Seq in HFF infected 72 hours with HCMV strain Merlin GSM1020249
+shortLabel RV mRNA-Seq 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-NoDrug-72h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 4.2
+visibility hide
+shortLabel Ribosome FP Ctrl 72h Merlin
+longLabel Ribosome-protected mRNA in untreated HFF infected 72 hours with HCMV strain Merlin GSM1020236
+html GSE41605
+
+track RF-NoDrug-72h-Merlin-FW
+type bigWig 0 1000
+parent RF-NoDrug-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-NoDrug-72h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in untreated HFF infected 72 hours with HCMV strain Merlin GSM1020236
+shortLabel FW Ribosome FP Ctrl 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-NoDrug-72h-Merlin-RV
+type bigWig 0 1000
+parent RF-NoDrug-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-NoDrug-72h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in untreated HFF infected 72 hours with HCMV strain Merlin GSM1020236
+shortLabel RV Ribosome FP Ctrl 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-Cycloheximide-72h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 4.3
+visibility hide
+shortLabel Ribosome FP CHX 72h Merlin
+longLabel Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 72 hours with HCMV strain Merlin GSM1020236
+html GSE41605
+
+track RF-Cycloheximide-72h-Merlin-FW
+type bigWig 0 1000
+parent RF-Cycloheximide-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Cycloheximide-72h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 72 hours with HCMV strain Merlin GSM1020236
+shortLabel FW Ribosome FP CHX 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-Cycloheximide-72h-Merlin-RV
+type bigWig 0 1000
+parent RF-Cycloheximide-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Cycloheximide-72h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in cycloheximide-pretreated HFF infected 72 hours with HCMV strain Merlin GSM1020236
+shortLabel RV Ribosome FP CHX 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track RF-Harringtonine-72h-Merlin
+compositeTrack on
+type bigWig 0 1000
+group GSE41605
+priority 4.4
+visibility hide
+shortLabel Ribosome FP Harr 72h Merlin
+longLabel Ribosome-protected mRNA in Harringtonine-treated HFF infected 72 hours with HCMV strain Merlin GSM1020239
+html GSE41605
+
+track RF-Harringtonine-72h-Merlin-FW
+type bigWig 0 1000
+parent RF-Harringtonine-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Harringtonine-72h-Merlin-FW.bw
+longLabel FW strand Ribosome-protected mRNA in Harringtonine-treated HFF infected 72 hours with HCMV strain Merlin GSM1020239
+shortLabel FW Ribosome FP Harr 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track RF-Harringtonine-72h-Merlin-RV
+type bigWig 0 1000
+parent RF-Harringtonine-72h-Merlin on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/RF-Harringtonine-72h-Merlin-RV.bw
+longLabel RV strand Ribosome-protected mRNA in Harringtonine-treated HFF infected 72 hours with HCMV strain Merlin GSM1020239
+shortLabel RV Ribosome FP Harr 72h Merlin
+visibility full
+color 170,35,31
+altColor 230,35,37
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+##################################################
+# PRJEB15199: HCMV Paired-End mRNA-Seq
+##################################################
+# 1: 72 h TB40/E mRNA-Seq
+#	1.1: MOI 0.16
+#	1.2: MOI 0.5
+#	1.3: MOI 5
+##################################################
+
+track pA-NHDF-MOI0.16-72h-TB40E
+compositeTrack on
+type bigWig 0 1000
+group PRJEB15199
+priority 1.1
+visibility hide
+shortLabel mRNA-Seq MOI0.16 72h TB40/E
+longLabel mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 0.16 ERR1593888-ERR1593892
+html PRJEB15199
+
+track pA-NHDF-MOI0.16-72h-TB40E-FW
+type bigWig 0 1000
+parent pA-NHDF-MOI0.16-72h-TB40E on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/PRJEB15199/pA-NHDF-MOI0.16-72h-TB40E-FW.bw
+longLabel FW strand mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 0.16 ERR1593888-ERR1593892
+shortLabel FW mRNA-Seq MOI0.16 72h TB40/E
+visibility full
+color 23,97,107
+altColor 24,130,145
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track pA-NHDF-MOI0.16-72h-TB40E-RV
+type bigWig 0 1000
+parent pA-NHDF-MOI0.16-72h-TB40E on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/PRJEB15199/pA-NHDF-MOI0.16-72h-TB40E-RV.bw
+longLabel RV strand mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 0.16 ERR1593888-ERR1593892
+shortLabel RV mRNA-Seq MOI0.16 72h TB40/E
+visibility full
+color 23,97,107
+altColor 24,130,145
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track pA-NHDF-MOI0.5-72h-TB40E
+compositeTrack on
+type bigWig 0 1000
+group PRJEB15199
+priority 1.2
+visibility hide
+shortLabel mRNA-Seq MOI0.5 72h TB40/E
+longLabel mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 0.5 ERR1593893-ERR1593897
+html PRJEB15199
+
+track pA-NHDF-MOI0.5-72h-TB40E-FW
+type bigWig 0 1000
+parent pA-NHDF-MOI0.5-72h-TB40E on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/PRJEB15199/pA-NHDF-MOI0.5-72h-TB40E-FW.bw
+longLabel FW strand mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 0.5 ERR1593893-ERR1593897
+shortLabel FW mRNA-Seq MOI0.5 72h TB40/E
+visibility full
+color 173,100,24
+altColor 219,124,0
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track pA-NHDF-MOI0.5-72h-TB40E-RV
+type bigWig 0 1000
+parent pA-NHDF-MOI0.5-72h-TB40E on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/PRJEB15199/pA-NHDF-MOI0.5-72h-TB40E-RV.bw
+longLabel RV strand mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 0.5 ERR1593893-ERR1593897
+shortLabel RV mRNA-Seq MOI0.5 72h TB40/E
+visibility full
+color 173,100,24
+altColor 219,124,0
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+###
+
+track pA-NHDF-MOI5-72h-TB40E
+compositeTrack on
+type bigWig 0 1000
+group PRJEB15199
+priority 1.3
+visibility hide
+shortLabel mRNA-Seq MOI5 72h TB40/E
+longLabel mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 5 ERR1593898-ERR1593902
+html PRJEB15199
+
+track pA-NHDF-MOI5-72h-TB40E-FW
+type bigWig 0 1000
+parent pA-NHDF-MOI5-72h-TB40E on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/PRJEB15199/pA-NHDF-MOI5-72h-TB40E-FW.bw
+longLabel FW strand mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 5 ERR1593898-ERR1593902
+shortLabel FW mRNA-Seq MOI5 72h TB40/E
+visibility full
+color 169,21,96
+altColor 220,38,127
+negateValues off
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16
+
+track pA-NHDF-MOI5-72h-TB40E-RV
+type bigWig 0 1000
+parent pA-NHDF-MOI5-72h-TB40E on
+bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/PRJEB15199/pA-NHDF-MOI5-72h-TB40E-RV.bw
+longLabel RV strand mRNA-Seq in NHDF infected 72 hours with HCMV strain TB40/E at MOI 5 ERR1593898-ERR1593902
+shortLabel RV mRNA-Seq MOI5 72h TB40/E
+visibility full
+color 169,21,96
+altColor 220,38,127
+negateValues on
+alwaysZero on
+autoScale on
+maxHeightPixels 128:128:16

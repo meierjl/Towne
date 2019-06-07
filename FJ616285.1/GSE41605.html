@@ -1,0 +1,43 @@
+<h2>Description</h2>
+<p>
+In 2012, Noam Stern-Ginossar and others published <em>Decoding human cytomegalovirus,</em> a manuscript that presented ribosome footprinting and mRNA sequencing data in support of hundreds of previously unidentified open reading frames. They performed their experiments in human foreskin fibroblasts infected with HCMV strain Merlin for 5, 24, or 72 hours. Here, we realign their annotations and raw sequencing data to <a
+href="https://www.ncbi.nlm.nih.gov/nuccore/FJ616285.1" target="_blank">HCMV strain Towne</a> to enable comparison with other datasets.
+</p>
+
+<h2>Methods</h2>
+<p>
+The original manuscript contains detailed protocols and explanations of drug treatments. Their mRNA-Seq protocol was not standard and was designed to overrepresent "fragments that start at the 5' end of messages" in an attempt to identify transcription start sites. Annotations were remapped from Merlin to Towne in SnapGene. Sequencing data was minimally processed as follows: 
+<ul>
+<h3>Download SRAs and extract fastq files</h3>
+Raw sequencing data was downloaded for each sample from GEO <a
+href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41605" target="_blank">GSE41605</a> and fastq files were extracted using the <a
+href="https://www.ncbi.nlm.nih.gov/sra/docs/toolkitsoft/" target="_blank">sra-toolkit</a> command "fastq-dump --origfmt *.sra".
+<h3>Adapter and polyA trimming</h3>
+<a
+href="https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/" target="_blank">Trim Galore!</a> was run twice: once to eliminate Illumina sequencing adapters, and once to eliminate "--adapter AAAAAAAAAAAAAAAAAAAA". Reads were not filtered based on quality ("--quality 0").
+<h3>Alignment to HCMV strain Towne</h3>
+<a
+href="https://ccb.jhu.edu/software/hisat2/index.shtml" target="_blank">HISAT2</a> was used to align adapter- and polyA-trimmed reads to <a
+href="https://www.ncbi.nlm.nih.gov/nuccore/FJ616285.1" target="_blank">HCMV strain Towne</a> using default settings.
+<h3>Track generation</h3>
+<a
+href="http://www.htslib.org/" target="_blank">Samtools</a>, <a
+href="http://bedtools.readthedocs.io/en/latest/" target="_blank">bedtools</a>, and <a
+href="http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/" target="_blank">bedGraphToBigWig</a> were used to process aligned SAM files into strand-specific bigWig pileup tracks. The following commands were used:</br></br>
+samtools view -S -u FILE.sam | samtools sort -l 0 | bedtools genomecov -ibam - -strand + -split -bg > FILE-FW.bdg;\</br>
+samtools view -S -u FILE.sam | samtools sort -l 0 | bedtools genomecov -ibam - -strand - -split -bg > FILE-RV.bdg;\</br>
+bedGraphToBigWig FILE-FW.bdg FJ616285.1.chrom.sizes FILE-FW.bw;\</br>
+bedGraphToBigWig FILE-RV.bdg FJ616285.1.chrom.sizes FILE-RV.bw</br>
+<h3>Notes</h3>
+We made no attempt to normalize or otherwise quantify differences between these tracks. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4439430/" target="_blank">Differences between HCMV strains</a> should be considered when interpreting these datasets.
+</p>
+</ul>
+
+<h2>References</h2>
+<p>
+Stern-Ginossar N, Weisburd B, Michalski A, Le VT, Hein MY, Huang SX, Ma M, Shen B, Qian SB, Hengel H, Mann M, Ingolia NT, Weissman JS. <em>Decoding human cytomegalovirus.</em> Science. 2012 Nov 23;338(6110):1088-93.
+PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23180859" target="_blank">23180859</a>; DOI: <a
+href="http://dx.doi.org/10.1126/science.1227919" target="_blank">10.1126/science.1227919</a>; GEO: <a
+href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41605" target="_blank">GSE41605</a>
+</p>
+
