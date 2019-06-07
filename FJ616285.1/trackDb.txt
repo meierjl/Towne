@@ -78,7 +78,7 @@ maxHeightPixels 128:128:16
 
 ###
 
-track DMSO_CMV_IE2_FKBP_dFK
+track DMSO_CMV_IE2_FKBP
 compositeTrack on hide
 type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
@@ -87,8 +87,8 @@ visibility full
 shortLabel PRO-Seq DMSO 4h TB40/E
 longLabel RO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
-track DMSO_CMV_IE2_FKBP_dFK_FW
-parent DMSO_CMV_IE2_FKBP_dFK on
+track DMSO_CMV_IE2_FKBP_FW
+parent DMSO_CMV_IE2_FKBP on
 type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-Ctrl-FJ616285.1-Norm-FW.bw
@@ -101,8 +101,8 @@ alwaysZero on
 autoScale on
 maxHeightPixels 128:128:16
 
-track DMSO_CMV_IE2_FKBP_dFK_RV
-parent DMSO_CMV_IE2_FKBP_dFK on
+track DMSO_CMV_IE2_FKBP_RV
+parent DMSO_CMV_IE2_FKBP on
 type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-Ctrl-FJ616285.1-Norm-RV.bw
