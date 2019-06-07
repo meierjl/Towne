@@ -6,7 +6,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq DMSO 4h TB40/E
+shortLabel PRO-Seq 96 h Towne
 longLabel PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain TB40/E
 
 track DMSO_CMV_WT_FW
@@ -84,7 +84,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq DMSO 4h TB40/E
+shortLabel PRO-Seq 96 h Towne-IE2-FKBP
 longLabel RO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
 track DMSO_CMV_IE2_FKBP_FW
@@ -123,7 +123,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq DMSO 4h TB40/E
+shortLabel PRO-Seq 96 h Towne-IE2-FKBP dFK
 longLabel RO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
 track DMSO_CMV_IE2_FKBP_dFK_FW
@@ -162,7 +162,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq Flavo 4h TB40/E
+shortLabel PRO-Seq 96 h Towne Flavo
 longLabel PRO-Seq in Flavo-treated HFF infected 4 hours with HCMV strain TB40/E
 
 track Flavo_CMV_WT_FW
@@ -201,7 +201,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq 96 h Towne dFK 
+shortLabel PRO-Seq 96 h Towne Flavo dFK 
 longLabel PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFKE
 
 track Flavo_CMV_WT_dFK_FW
@@ -240,7 +240,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq Flavo 4h TB40/E
+shortLabel PRO-Seq 96 h Towne-IE2-FKBP Flavo
 longLabel PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
 track Flavo_CMV_IE2_FKBP_FW
@@ -279,7 +279,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
-shortLabel PRO-Seq Flavo 4h TB40/E
+shortLabel PRO-Seq 96 h Towne-IE2-FKBP Flavo dFK
 longLabel RO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
 track Flavo_CMV_IE2_FKBP_dFK_FW
