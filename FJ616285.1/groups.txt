@@ -1,4 +1,4 @@
-name proseq-procap
+name IE2-FKBP-PRO-Seq
 label PRO-Seq and PRO-Cap Datasets
 priority 1
 defaultIsClosed 0
@@ -9,11 +9,6 @@ priority 2
 defaultIsClosed 0
 
 name GSE41605
-label GSE41605: HCMV Ribosome Profiling and ORFs (2012)
+label GSE41605: HCMV ORFs (2012)
 priority 3
-defaultIsClosed 0
-
-name PRJEB15199
-label PRJEB15199: HCMV Paired-End mRNA-Seq (2016)
-priority 4
 defaultIsClosed 0
