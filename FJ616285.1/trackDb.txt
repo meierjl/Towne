@@ -13,7 +13,7 @@ track DMSO_CMV_WT_FW
 parent DMSO_CMV_WT on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvWT-Ctrl-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvWT-Ctrl-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne
 shortLabel FW PRO-Seq DMSO 96h Towne
 negateValues off
@@ -27,7 +27,7 @@ track DMSO_CMV_WT_RV
 parent DMSO_CMV_WT on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvWT-Ctrl-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvWT-Ctrl-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne
 shortLabel RV PRO-Seq DMSO 96h Towne
 negateValues on
@@ -52,7 +52,7 @@ track DMSO_CMV_WT_dFK_FW
 parent DMSO_CMV_WT_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/2018-02-28-DMSO-cmvWT-dFK-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/2018-02-28-DMSO-cmvWT-dFK-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFK
 shortLabel FW PRO-Seq 96h Towne dFK
 negateValues off
@@ -66,7 +66,7 @@ track DMSO_CMV_WT_dFK_RV
 parent DMSO_CMV_WT_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/proseq-procap/2018-02-28-DMSO-cmvWT-dFK-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/proseq-procap/2018-02-28-DMSO-cmvWT-dFK-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFK
 shortLabel RV PRO-Seq 96h Towne dFK
 negateValues on
@@ -91,7 +91,7 @@ track DMSO_CMV_IE2_FKBP_dFK_FW
 parent DMSO_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-Ctrl-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-Ctrl-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 shortLabel FW PRO-Seq DMSO 96h Towne-IE2-FKBP
 negateValues off
@@ -105,7 +105,7 @@ track DMSO_CMV_IE2_FKBP_dFK_RV
 parent DMSO_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-Ctrl-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-Ctrl-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 shortLabel RV PRO-Seq DMSO 96h Towne-IE2-FKBP
 negateValues on
@@ -130,7 +130,7 @@ track DMSO_CMV_IE2_FKBP_dFK_FW
 parent DMSO_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-dFK-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-dFK-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
 shortLabel FW PRO-Seq DMSO 96h Towne-IE2-FKBP
 negateValues off
@@ -144,7 +144,7 @@ track DMSO_CMV_IE2_FKBP_dFK_RV
 parent DMSO_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-dFK-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-DMSO-cmvIE2-dFK-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
 shortLabel RV PRO-Seq DMSO 96h Towne-IE2-FKBP
 negateValues on
@@ -169,7 +169,7 @@ track Flavo_CMV_WT_FW
 parent Flavo_CMV_WT on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
 shortLabel FW PRO-Seq Flavo 96h Towne
 negateValues off
@@ -183,7 +183,7 @@ track Flavo_CMV_WT_RV
 parent Flavo_CMV_WT on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
 shortLabel RV PRO-Seq Flavo 96h Towne
 negateValues on
@@ -208,7 +208,7 @@ track Flavo_CMV_WT_dFK_FW
 parent Flavo_CMV_WT_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/2018-02-28-Flavo-cmvWT-dFK-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/2018-02-28-Flavo-cmvWT-dFK-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFK
 shortLabel FW PRO-Seq 96h Towne dFK
 negateValues off
@@ -222,7 +222,7 @@ track Flavo_CMV_WT_dFK_RV
 parent Flavo_CMV_WT_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/proseq-procap/2018-02-28-Flavo-cmvWT-dFK-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/proseq-procap/2018-02-28-Flavo-cmvWT-dFK-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFK
 shortLabel RV PRO-Seq 96h Towne dFK
 negateValues on
@@ -247,7 +247,7 @@ track Flavo_CMV_IE2_FKBP_dFK_FW
 parent Flavo_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-Ctrl-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-Ctrl-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 shortLabel FW PRO-Seq Flavo 96h Towne-IE2-FKBP
 negateValues off
@@ -261,7 +261,7 @@ track Flavo_CMV_IE2_FKBP_dFK_RV
 parent Flavo_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-Ctrl-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-Ctrl-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 shortLabel RV PRO-Seq Flavo 96h Towne-IE2-FKBP
 negateValues on
@@ -286,7 +286,7 @@ track Flavo_CMV_IE2_FKBP_dFK_FW
 parent Flavo_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-dFK-FJ616285.1-Norm-FW.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-dFK-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
 shortLabel FW PRO-Seq Flavo 96h Towne-IE2-FKBP
 negateValues off
@@ -300,7 +300,7 @@ track Flavo_CMV_IE2_FKBP_dFK_RV
 parent Flavo_CMV_IE2_FKBP_dFK on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-dFK-FJ616285.1-Norm-RV.bw
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-dFK-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
 shortLabel RV PRO-Seq Flavo 96h Towne-IE2-FKBP
 negateValues on
@@ -316,14 +316,13 @@ maxHeightPixels 128:128:16
 ##################################################
 # 1: Annotated CDS from FJ616285.1
 # 2: Additional details for MIE promoters IE1/IE2
-# 3: Additional regions of interest around oriLyt
 ##################################################
 
 track FJ616285.1-genbank
 type bigGenePred
 group map
 priority 1
-bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/FJ616285.1.bb
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/FJ616285.1.bb
 longLabel Annotated CDS for HCMV strain Towne (FJ616285.1)
 shortLabel GenBank FJ616285.1
 visibility pack
@@ -334,7 +333,7 @@ track MIE
 type bigBed 12 .
 group map
 priority 2
-bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/MIE.bb
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/MIE.bb
 longLabel Potential MIE promoters
 shortLabel MIE Promoters
 visibility pack
@@ -350,7 +349,7 @@ track ORFs-GSE41605
 type bigBed 6 .
 group GSE41605
 priority 1
-bigDataUrl https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/FJ616285.1/GSE41605/ORFs-GSE41605.bb
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/GSE41605/ORFs-GSE41605.bb
 longLabel ORFs identified in Decoding HCMV Using Ribosome Profiling (GSE41605)
 shortLabel Identified ORFs
 visibility hide
