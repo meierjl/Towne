@@ -7,7 +7,7 @@ group IE2-FKBP-PRO-Seq
 priority 1
 visibility full
 shortLabel PRO-Seq 96 h Towne
-longLabel PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain TB40/E
+longLabel PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain Towne
 
 track DMSO_CMV_WT_FW
 parent DMSO_CMV_WT on
@@ -46,7 +46,7 @@ group IE2-FKBP-PRO-Seq
 priority 2
 visibility full
 shortLabel PRO-Seq 96 h Towne dFK 
-longLabel PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFKE
+longLabel PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFK
 
 track DMSO_CMV_WT_dFK_FW
 parent DMSO_CMV_WT_dFK on
