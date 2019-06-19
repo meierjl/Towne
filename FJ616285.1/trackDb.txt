@@ -153,7 +153,6 @@ altColor 113,35,124
 alwaysZero on
 autoScale on
 maxHeightPixels 128:128:16
-
 ###
 
 track Flavo_CMV_WT
@@ -202,7 +201,7 @@ group IE2-FKBP-PRO-Seq
 priority 6
 visibility full
 shortLabel PRO-Seq 96 h Towne Flavo dFK 
-longLabel PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFKE
+longLabel PRO-Seq in HFF infected 96 hours with HCMV strain Towne and treated for last 6 hours with dFK
 
 track Flavo_CMV_WT_dFK_FW
 parent Flavo_CMV_WT_dFK on
