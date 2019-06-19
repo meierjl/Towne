@@ -134,8 +134,7 @@ bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/mas
 longLabel FW strand PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
 shortLabel F 96h IE2F dTAG
 negateValues off
-color 113,35,124
-altColor 113,35,124
+color 113,35,124altColor 113,35,124
 alwaysZero on
 autoScale on
 maxHeightPixels 128:128:16
@@ -170,7 +169,7 @@ parent Flavo_CMV_WT on
 type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-FW.bwlongLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
-shortLabel F  96h IE2 Flavo 
+shortLabel F 96h IE2 Flavo 
 negateValues off
 color 153,58,29
 altColor 153,58,29
@@ -184,7 +183,7 @@ type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
-shortLabel R  96h IE2 Flavo 
+shortLabel R 96h IE2 Flavo 
 negateValues on
 color 153,58,29
 altColor 153,58,29
