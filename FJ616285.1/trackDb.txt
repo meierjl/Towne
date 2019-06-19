@@ -112,6 +112,7 @@ negateValues on
 color 113,35,124
 altColor 113,35,124
 alwaysZero on
+
 autoScale on
 maxHeightPixels 128:128:16
 
@@ -162,13 +163,14 @@ group IE2-FKBP-PRO-Seq
 priority 5
 visibility full
 shortLabel PRO-Seq 96 h Towne Flavo
-longLabel PRO-Seq in Flavo-treated HFF infected 4 hours with HCMV strain TB40/E
+longLabel PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
 
 track Flavo_CMV_WT_FW
 parent Flavo_CMV_WT on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-FW.bwlongLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
+bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvWT-Ctrl-FJ616285.1-Norm-FW.bw
+longLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne
 shortLabel F 96h IE2 Flavo 
 negateValues off
 color 153,58,29
