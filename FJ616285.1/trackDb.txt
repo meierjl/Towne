@@ -276,8 +276,7 @@ maxHeightPixels 128:128:16
 track Flavo_CMV_IE2_FKBP_dFK
 compositeTrack on hide
 type bigWig 0 1000
-group IE2-FKBP-PRO-Seq
-priority 8
+group IE2-FKBP-PROpriority 8
 visibility full
 shortLabel PRO-Seq 96 h Towne-IE2-FKBP Flavo dFK
 longLabel RO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
@@ -288,7 +287,7 @@ type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-dFK-FJ616285.1-Norm-FW.bw
 longLabel FW strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
-shortLabel F 96h IE2F Flavo dFKBP
+shortLabel F 96h IE2F Flavo dTAG
 negateValues off
 color 153,58,29
 altColor 153,58,29
@@ -302,7 +301,7 @@ type bigWig 0 1000
 visibility full
 bigDataUrl https://meierjl:Cmv2019!!@raw.githubusercontent.com/meierjl/Towne/master/FJ616285.1/IE2-FKBP-PRO-Seq/2018-02-28-Flavo-cmvIE2-dFK-FJ616285.1-Norm-RV.bw
 longLabel RV strand PRO-Seq in Flavo-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP and treated for the last 6 hours with dFK
-shortLabel R 96h IE2F Flavo dFKBP
+shortLabel R 96h IE2F Flavo dTAG
 negateValues on
 color 153,58,29
 altColor 153,58,29
