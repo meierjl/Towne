@@ -85,7 +85,7 @@ group IE2-FKBP-PRO-Seq
 priority 3
 visibility full
 shortLabel PRO-Seq 96 h Towne-IE2-FKBP
-longLabel RO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
+longLabel PRO-Seq in DMSO-treated HFF infected 96 hours with HCMV strain Towne-IE2-FKBP
 
 track DMSO_CMV_IE2_FKBP_FW
 parent DMSO_CMV_IE2_FKBP on
