@@ -3,10 +3,10 @@ This is a curated selection of existing and new HCMV datasets for viewing in the
 
 Usage:
 
-First go to the UCSC Genome Browser.
-Then, navigate to My Data > Track Hubs.
-Select the My Hubs tab.
-Finally, paste https://raw.githubusercontent.com/meierjl/Towne/master/hub.txt into the URL field.
+    First go to the UCSC Genome Browser.
+    Then, navigate to My Data > Track Hubs.
+    Select the My Hubs tab.
+    Finally, paste https://raw.githubusercontent.com/P-TEFb/trackHub_HCMV/master/hub.txt into the URL field.
 
 You should now be able to select the FJ616285.1 genome and view these tracks!
 
