@@ -1,4 +1,4 @@
-# Towne
+s# Towne
 This is a curated selection of existing and new HCMV Towne datasets for viewing in the UCSC Genome Browser.
 
 Usage:
@@ -20,8 +20,10 @@ Please visit the following site for documentation: https://genome.ucsc.edu/golde
 
 Citations:
 
-This track hub was compiled by Ming Li and Christopher Ball in the lab of Jeff Meier and David Price at the University of Iowa.
+This track hub was compiled by Ming Li and Christopher Ball in the labs of Jeff Meier and David Price at the University of Iowa.
 
 This track hub contains PRO-Seq first described in the following manuscript:
 
 Human cytomegalovirus IE2 drives transcription initiation from a select subset of late infection viral promoters by host RNA polymerase II. Ming Li, Christopher B. Ball, Geoffrey Collins, Qiaolin Hu, Donal S. Luse, David H. Price, and Jeffery L. Meier.
+
+This track hub also contains datasets generated and described by Stern-Ginossar N, et al. in their 2012 Science manuscript PMID: 23180859. Raw datasets were downloaded from GEO: GSE41605.
