@@ -1,10 +1,10 @@
- # Towne
+# Towne
 
 This is a curated selection of existing and new HCMV Towne datasets for viewing in the [UCSC Genome Browser](http://www.genome.ucsc.edu/).
 
 # Usage:
 
-    First go to the UCSC Genome Browser.
+    First go to the [UCSC Genome Browser](http://www.genome.ucsc.edu/).
     Then, navigate to My Data > Track Hubs.
     Select the My Hubs tab.
     Finally, paste https://raw.githubusercontent.com/meierjl/Towne/master/hub.txt into the URL field.
