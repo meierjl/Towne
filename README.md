@@ -4,7 +4,7 @@ This is a curated selection of existing and new HCMV Towne datasets for viewing 
 
 # Usage:
 
-    First go to the [UCSC Genome Browser](http://www.genome.ucsc.edu/).
+    First go to the .
     Then, navigate to My Data > Track Hubs.
     Select the My Hubs tab.
     Finally, paste https://raw.githubusercontent.com/meierjl/Towne/master/hub.txt into the URL field.
