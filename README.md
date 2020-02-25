@@ -1,6 +1,6 @@
 # Towne
 
-This is a curated selection of existing and new HCMV Towne datasets for viewing in the [tsrFinder] [UCSC Genome Browser]
+This is a curated selection of existing and new HCMV Towne datasets for viewing in the [UCSC Genome Browser]
 
 # Usage:
 
