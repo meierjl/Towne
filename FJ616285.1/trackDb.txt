@@ -278,7 +278,7 @@ maxHeightPixels 128:128:16
 track Flavo_CMV_IE2_FKBP_dFK
 compositeTrack on hide
 type bigWig 0 1000
-group IE2-FKBP-PRO
+group IE2-FKBP-PRO-Seq
 priority 8
 visibility full
 shortLabel PRO-Seq 96 h Towne-IE2-FKBP Flavo dFK
