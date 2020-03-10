@@ -1,5 +1,5 @@
 name IE2-FKBP-PRO-Seq
-label PRO-Seq and PRO-Cap Datasets
+label PRO-Seq Datasets
 priority 1
 defaultIsClosed 0
 
