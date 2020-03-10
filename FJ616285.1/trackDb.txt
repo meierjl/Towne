@@ -7,7 +7,7 @@ type bigWig 0 1000
 group IE2-FKBP-PRO-Seq
 priority 1
 visibility full
-shortLabel PRO-Seq 96 h Towne
+shortLabel 96h IE2
 longLabel PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain Towne
 
 track DMSO_CMV_WT_FW
